@@ -1,0 +1,10 @@
+.square-frame {
+    border: 1px dotted #999;
+}
+
+.square-content {
+    display: block;
+    height: 0;
+    width: 100%;
+    padding-bottom: 100%;
+}
