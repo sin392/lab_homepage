@@ -1,10 +1,16 @@
-.square-frame {
-    border: 1px dotted #999;
-}
+/* #logo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    max-width: 30px;
+    margin: 0px;
+} */
 
-.square-content {
-    display: block;
-    height: 0;
-    width: 100%;
-    padding-bottom: 100%;
+#jeong {
+    width: 150px;
+    height:205px;
+    background-image: url('../static/jeong-trimmed.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 4px;
 }

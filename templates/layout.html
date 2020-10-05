@@ -5,24 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <title>{{ title }}</title>
 </head>
 <body class="d-flex flex-column border" style="min-height: 100vh;">
     <!-- header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid row">
-            <div class="navbar-header col-9">
-                <a class="navbar-brand" href="/">鄭研究室</a>
+        <div class="container-fluid row pl-0">
+            <div class="navbar-header col-sm-8">
+                <a class="navbar-brand" href="/">
+                    <div class="row">
+                        <div class="col border">
+                            <img class="border" src="#" alt="logo" width="50" height="50">
+                        </div>
+                        <div class="col">
+                            <span class="m-0 small">沼津高専 電子制御工学科</span><br>
+                            <span class="m-0" style="font-size: xx-large;">鄭研究室</span>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <ul class="navbar-nav col-3">
-                <li class="nav-item active"><a class="nav-link">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="/member">Member</a></li>
-                <li class="nav-item"><a class="nav-link" href="/research">Research</a></li>
-                <li class="nav-item"><a class="nav-link">Achievement</a></li>
-                <li class="nav-item"><a class="nav-link">Link</a></li>
-                <li class="nav-item"><a class="nav-link">Contact</a></li>
-            </ul>
+            <div class="col-sm-4 p-0">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/member">Member</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link">Achievement</a></li>
+                    <li class="nav-item"><a class="nav-link">Link</a></li>
+                    <li class="nav-item"><a class="nav-link">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
